@@ -9,8 +9,8 @@ if (!$result) {
 }
 
 ?>
-
-<table border="1">
+<div class="container">
+<table class="table table-bordered table-hover">
     <thead>
         <th>first name</th>
         <th>last name</th>
@@ -32,7 +32,8 @@ if (!$result) {
 
     </tbody>
 </table>
-
+    <a href="index.php" class="btn btn-info">return</a>
+</div>
 
 
 

@@ -1,10 +1,10 @@
-<?php
-include 'includes/header.php';
-?>
 <p>Looking For</p>
 <form action="doSearch.php" method="POST">
-    <input type="search" name="searchBox">
-    <br>
-    <input type="submit" name="search" value="Search">
+    <div class="form-group">
+
+            <input type="search" name="searchBox" class="form-control">
+            <br>
+            <input type="submit" name="search" value="Search" class="btn btn-info">
+
+    </div>
 </form>
-<?php include 'includes/footer.php'; ?>

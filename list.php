@@ -1,12 +1,11 @@
 <?php
-include 'includes/header.php';
 include 'database.php';
 $query = "SELECT * FROM `persons`";
 $result = mysqli_query($connection, $query);
 
 ?>
 
-<table border="1">
+<table class="table table-bordered table-hover">
     <thead>
         <th>first name</th>
         <th>last name</th>
@@ -28,8 +27,3 @@ $result = mysqli_query($connection, $query);
 
     </tbody>
 </table>
-
-
-
-
-<?php include 'includes/footer.php'; ?>

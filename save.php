@@ -12,6 +12,8 @@ $query = "INSERT INTO `persons` ( `firstname` , `lastname` , `numbers` , `groupn
 $query_persons = mysqli_query($connection, $query);
 if (!$query_persons) {
     echo 'Error to insert data into database ' . mysqli_error($connection);
+}elseif ($query_persons){
+    header("Location: index.php");
 }
 
-header("Location: index.php");
+
